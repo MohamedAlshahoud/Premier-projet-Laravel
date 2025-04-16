@@ -1,0 +1,35 @@
+/* public/css/app.css */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Couleur du header */
+.navbar-custom {
+    background-color: #0d6efd; /* Bleu Bootstrap ou celui que tu veux */
+}
+
+/* Couleur du footer */
+.footer-custom {
+    background-color: #343a40; /* Gris foncé */
+    color: white;
+}
+
+/* page d'accueil */
+.d-flex {
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
