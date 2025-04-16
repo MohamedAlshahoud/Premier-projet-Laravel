@@ -38,6 +38,8 @@ Clonez ce dépôt sur votre machine locale :
 
 ```bash
 git clone https://github.com/MohamedAlshahoud/Premier-projet-Laravel.git
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 2. Installez les dépendances PHP avec Composer
+
+```bash
+composer install
