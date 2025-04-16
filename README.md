@@ -29,7 +29,6 @@ Avant de commencer, assurez-vous d'avoir installé les logiciels suivants :
 - **PHP 8.x+** : [Télécharger PHP](https://www.php.net/downloads)
 - **Composer** : [Installer Composer](https://getcomposer.org/download/)
 - **MySQL ou MariaDB** : [Installer MySQL](https://dev.mysql.com/downloads/)
-- **Node.js** (si tu utilises des outils front-end comme Vue.js ou Livewire) : [Télécharger Node.js](https://nodejs.org/)
 
 ## Installation
 
