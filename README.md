@@ -46,7 +46,6 @@ Avant de commencer, assurez-vous d'avoir installé les logiciels suivants :
    
 3. Configurez votre environnement :
    
-   ```bash
    Renommez le fichier .env.exemple en .env
 
    Puis configurez les informations de votre base de données dans le fichier .env. Exemple :
