@@ -74,14 +74,6 @@ Avant de commencer, assurez-vous d'avoir installé les logiciels suivants :
 6. Vous pourrez accéder à votre application sur **http://localhost:8000**
 
 
-## 🔧 Explication du contenu :
-1. **Description du projet** : Présentation générale du projet Laravel.
-2. **Fonctionnalités** : Liste des principales fonctionnalités.
-3. **Prérequis** : Logiciels nécessaires à l'exécution du projet.
-4. **Installation** : Étapes détaillées pour configurer et démarrer le projet sur la machine locale.
-5. **Tests** : Instructions pour lancer les tests unitaires.
-
-
 Cela va améliorer la lisibilité et la compréhension de ton projet pour toute personne qui souhaite l’utiliser ou y contribuer.
    
 ## Contribuer
