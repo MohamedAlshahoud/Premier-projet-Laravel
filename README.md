@@ -30,7 +30,7 @@ Avant de commencer, assurez-vous d'avoir installé les logiciels suivants :
 - **Composer** : [Installer Composer](https://getcomposer.org/download/)
 - **MySQL ou MariaDB** : [Installer MySQL](https://dev.mysql.com/downloads/)
 
-## Installation
+## 📦 Installation
 
 1. Clonez le projet :
    Clonez ce dépôt sur votre machine locale :
@@ -79,7 +79,7 @@ Cela va améliorer la lisibilité et la compréhension de ton projet pour toute 
 ## Contribuer
 Si vous souhaitez contribuer à ce projet, n'hésitez pas à créer une branche et à soumettre une pull request. Merci de respecter les bonnes pratiques en matière de commits et de tests.
 
-## Licence 
+## 📝 Licence 
 Ce projet est sous la licence MIT.
 
 ## Auteurs 
