@@ -32,14 +32,47 @@ Avant de commencer, assurez-vous d'avoir installé les logiciels suivants :
 
 ## Installation
 
-### 1. Clonez le projet
+1. Clonez le projet :
+   Clonez ce dépôt sur votre machine locale :
 
-Clonez ce dépôt sur votre machine locale :
+   ```bash
+   git clone https://github.com/MohamedAlshahoud/Premier-projet-Laravel.git
 
-```bash
-git clone https://github.com/MohamedAlshahoud/Premier-projet-Laravel.git
+2. Installez les dépendances PHP avec Composer :
+   Depuis le répertoire du projet, exécutez la commande suivante pour installer toutes les dépendances PHP 
 
-### 2. Installez les dépendances PHP avec Composer
+   ```bash
+   composer install
+   
+3. Configurez votre environnement :
+   
+   ```bash
+   Renommez le fichier .env.exemple en .env
 
-```bash
-composer install
+   Puis configurez les informations de votre base de données dans le fichier .env. Exemple :
+
+    ```bash
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=nom_de_votre_base_de_donnees
+    DB_USERNAME=votre_nom_d_utilisateur
+    DB_PASSWORD=mot_de_passe
+
+   ```bash
+   mv .env.exemple .env
+
+4. Créez la base de données et effectuez les migrations :
+
+   ```bash
+   php artisan migrate
+
+5. Lancez le serveur de développement :
+
+   ```bash
+   php artisan serve
+
+6. Vous pourrez accéder à votre application sur **http://localhost:8000**
+   
+
+
