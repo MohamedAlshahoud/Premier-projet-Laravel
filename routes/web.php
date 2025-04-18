@@ -6,9 +6,9 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('accueil');
 });
 
-Route::get('/', [AccueilController::class, 'index']);
-Route::get('/', [EventController::class, 'index'])->name('events.index');
-Route::get('/', [AccueilController::class, 'show'])->name('events.show');
+// Route::get('/', [AccueilController::class, 'index']);
+// Route::get('/', [EventController::class, 'index'])->name('events.index');
+// Route::get('/events/{id}', [EventController::class, 'show'])->name('events.show');
