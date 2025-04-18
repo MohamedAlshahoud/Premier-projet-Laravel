@@ -21,13 +21,64 @@ main {
     background-color: #0d6efd; /* Bleu Bootstrap ou celui que tu veux */
 }
 
-/* Couleur du footer */
-.footer-custom {
-    background-color: #0d6efd; /* Gris foncé */
-    color: white;
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
-/* page d'accueil */
+/* Footer */
+footer {
+    background-color: #4258d7;
+    color: white;
+    padding-top: 40px;
+}
+
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer p, footer a {
+    color: white;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+
+footer .container {
+    max-width: 1170px;
+}
+
+/* Réseaux sociaux */
+footer .bi {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+footer .text-white {
+    color: white !important;
+}
+
+footer .text-white:hover {
+    color: #007bff;
+}
+
+footer .col-md-4 {
+    margin-bottom: 30px;
+}
+
+/* Spécificité pour le formulaire de contact */
+form .form-control {
+    margin-bottom: 15px;
+}
+
+/*--------- */
+
 .d-flex {
     justify-content: center;
     align-items: center;
