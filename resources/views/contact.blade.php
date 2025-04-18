@@ -5,7 +5,14 @@
         <h1>Contactez-nous</h1>
         <p>Si vous avez des questions, n'hésitez pas à nous contacter en remplissant le formulaire ci-dessous.</p>
 
-        <form action="#" method="POST">
+        <!-- Message de succès -->
+        @if(session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
+        @endif
+
+        <form action="{{ url('/contact') }}" method="POST">
             @csrf
             <div class="mb-3">
                 <label for="name" class="form-label">Nom</label>
