@@ -1,37 +1,20 @@
 <?php
 
-use App\Http\Controllers\AccueilController;
-use App\Http\Controllers\EventController;
-use Illuminate\Http\Request;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-
 Route::get('/', function () {
-    return view('accueil');
+    return view('welcome');
 });
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/contact', function () {
-    return view('contact');
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-
-Route::post('/contact', function (Request $request) {
-    // Validation des données
-    $validated = $request->validate([
-        'name' => 'required|string|max:255',
-        'email' => 'required|email|max:255',
-        'message' => 'required|string|max:1000',
-    ]);
-
-    // Vous pouvez ici envoyer l'email, sauvegarder le message, ou toute autre action.
-
-    // Après le traitement du formulaire, redirige vers la page de contact avec un message de succès
-    return redirect('/contact')->with('success', 'Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.');
-});
-
-
-
-// Route::get('/', [AccueilController::class, 'index']);
-// Route::get('/', [EventController::class, 'index'])->name('events.index');
-// Route::get('/events/{id}', [EventController::class, 'show'])->name('events.show');
+require __DIR__.'/auth.php';
