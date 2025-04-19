@@ -43,13 +43,13 @@
             <div class="row">
                 <!-- À propos -->
                 <div class="col-md-4 mb-3">
-                    <h5>À propos</h5>
-                    <p class="small">Mon Projet Laravel est une plateforme de gestion d'événements simplifiée et intuitive.</p>
+                    <h5 class="text-uppercase">À propos</h5>
+                    <p class="small">Mon Projet Laravel est une plateforme de gestion d'événements simplifiée et intuitive. Créez, gérez et partagez des événements facilement.</p>
                 </div>
 
                 <!-- Liens utiles -->
                 <div class="col-md-4 mb-3">
-                    <h5>Liens utiles</h5>
+                    <h5 class="text-uppercase">Liens utiles</h5>
                     <ul class="list-unstyled">
                         <li><a href="{{ url('/contact') }}" class="text-white text-decoration-none">Contact</a></li>
                         <li><a href="#" class="text-white text-decoration-none">Mentions légales</a></li>
@@ -59,18 +59,21 @@
 
                 <!-- Réseaux sociaux -->
                 <div class="col-md-4 mb-3">
-                    <h5>Suivez-nous</h5>
-                    <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
-                    <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="text-white"><i class="bi bi-github"></i></a>
+                    <h5 class="text-uppercase">Suivez-nous</h5>
+                    <a href="#" class="text-white me-3 fs-4" title="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3 fs-4" title="Twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white me-3 fs-4" title="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white fs-4" title="GitHub"><i class="bi bi-github"></i></a>
                 </div>
             </div>
 
             <hr class="border-secondary">
 
-            <div class="text-center pb-3">
-                <p class="mb-0">&copy; {{ date('Y') }} Mon Projet Laravel. Tous droits réservés.</p>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; {{ date('Y') }} Mon Projet Laravel. Tous droits réservés.</p>
+                    <small><a href="#" class="text-white text-decoration-none">Politique de confidentialité</a></small>
+                </div>
             </div>
         </div>
     </footer>
