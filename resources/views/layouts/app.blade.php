@@ -6,8 +6,11 @@
     <title>Mon Projet Laravel</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <!-- Bootstrap Icons (optionnel pour les icônes) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body class="d-flex flex-column min-vh-100">
+
     <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -20,7 +23,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link active" href="{{ url('/') }}">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Evénements</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Événements</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Se connecter</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ url('/contact') }}">Contact</a></li>
                     </ul>
@@ -34,10 +37,41 @@
         @yield('content')
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <!-- Footer complet -->
+    <footer class="bg-dark text-white pt-4 mt-auto">
         <div class="container">
-            <p class="mb-0">© {{ date('Y') }} Mon Projet Laravel. Tous droits réservés.</p>
+            <div class="row">
+                <!-- À propos -->
+                <div class="col-md-4 mb-3">
+                    <h5>À propos</h5>
+                    <p class="small">Mon Projet Laravel est une plateforme de gestion d'événements simplifiée et intuitive.</p>
+                </div>
+
+                <!-- Liens utiles -->
+                <div class="col-md-4 mb-3">
+                    <h5>Liens utiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="{{ url('/contact') }}" class="text-white text-decoration-none">Contact</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Mentions légales</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Conditions d'utilisation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Réseaux sociaux -->
+                <div class="col-md-4 mb-3">
+                    <h5>Suivez-nous</h5>
+                    <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-github"></i></a>
+                </div>
+            </div>
+
+            <hr class="border-secondary">
+
+            <div class="text-center pb-3">
+                <p class="mb-0">&copy; {{ date('Y') }} Mon Projet Laravel. Tous droits réservés.</p>
+            </div>
         </div>
     </footer>
 
