@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Projet Laravel</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body class="d-flex flex-column min-vh-100">
     <!-- Header -->
@@ -21,7 +22,7 @@
                         <li class="nav-item"><a class="nav-link active" href="{{ url('/') }}">Accueil</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Evénements</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Se connecter</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('/contact') }}">Contact</a></li>
                     </ul>
                 </div>
             </div>
